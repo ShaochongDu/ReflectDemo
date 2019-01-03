@@ -11,6 +11,8 @@
 //#import <objc/runtime.h>
 #import <objc/message.h>
 
+#import "Reflect.h"
+
 @interface ViewController ()
 
 @end
@@ -52,6 +54,9 @@
 //
 //    //  5. 基于函数指针
 //    [self useMethodIMP];
+    
+//    //  6. 基于invocation
+//    [self useInvocation];
 }
 
 /**
@@ -195,6 +200,7 @@
     SEL sel2 = NSSelectorFromString(@"logName:address:");
     IMP imp2 = [person methodForSelector:sel2];
     NSString *(*func2)(id, SEL, NSString*, NSString*) = (void *)imp2;
+    //  若返回值为基础类型 如:float 则需明确指定CGFloate类型
     NSString *info = func2(person, sel2, @"王五", @"海南");
     NSLog(@"info----%@",info);
     // 或直接调用
@@ -219,6 +225,19 @@
     func4(person, sel4, block);
     // 或直接调用
     
+}
+
+/**
+ 6. 基于NSInvocation
+ */
+- (IBAction)useInvocation:(id)sender {
+    [self printLine];
+    
+    [Reflect invocationForObject:NSClassFromString(@"Person") withSeletorStr:@"printPerson" andParameters:nil];
+    
+    Class p = NSClassFromString(@"Person");
+    id person = [[p alloc] init];
+    [Reflect invocationForObject:person withSeletorStr:@"printUserName:" andParameters:@[@"Lucy"]];
 }
 
 - (void)printLine {

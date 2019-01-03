@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E81F733021DDB93A00AC4914 /* Reflect.m in Sources */ = {isa = PBXBuildFile; fileRef = E81F732F21DDB93A00AC4914 /* Reflect.m */; };
+		E81F733321DDB9CC00AC4914 /* NSInvocation+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E81F733221DDB9CC00AC4914 /* NSInvocation+Helper.m */; };
 		E82D056221CC8E0300676141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D056121CC8E0300676141 /* AppDelegate.m */; };
 		E82D056521CC8E0300676141 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82D056421CC8E0300676141 /* ViewController.m */; };
 		E82D056821CC8E0300676141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82D056621CC8E0300676141 /* Main.storyboard */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E81F732E21DDB93A00AC4914 /* Reflect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reflect.h; sourceTree = "<group>"; };
+		E81F732F21DDB93A00AC4914 /* Reflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reflect.m; sourceTree = "<group>"; };
+		E81F733121DDB9CC00AC4914 /* NSInvocation+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Helper.h"; sourceTree = "<group>"; };
+		E81F733221DDB9CC00AC4914 /* NSInvocation+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Helper.m"; sourceTree = "<group>"; };
 		E82D055D21CC8E0300676141 /* ReflectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82D056021CC8E0300676141 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E82D056121CC8E0300676141 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 		E82D055F21CC8E0300676141 /* ReflectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E81F733121DDB9CC00AC4914 /* NSInvocation+Helper.h */,
+				E81F733221DDB9CC00AC4914 /* NSInvocation+Helper.m */,
+				E81F732E21DDB93A00AC4914 /* Reflect.h */,
+				E81F732F21DDB93A00AC4914 /* Reflect.m */,
 				E82D056021CC8E0300676141 /* AppDelegate.h */,
 				E82D056121CC8E0300676141 /* AppDelegate.m */,
 				E82D056321CC8E0300676141 /* ViewController.h */,
@@ -149,6 +159,8 @@
 				E82D056521CC8E0300676141 /* ViewController.m in Sources */,
 				E82D057021CC8E0500676141 /* main.m in Sources */,
 				E82D057821CC91E700676141 /* Person.m in Sources */,
+				E81F733321DDB9CC00AC4914 /* NSInvocation+Helper.m in Sources */,
+				E81F733021DDB93A00AC4914 /* Reflect.m in Sources */,
 				E82D056221CC8E0300676141 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
